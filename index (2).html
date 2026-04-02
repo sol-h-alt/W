@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solomon Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a192f;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    color: #64ffda;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #64ffda;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #0a192f, #172a45);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: #64ffda;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #0a192f;
+}
+
+/* COURSES */
+.courses ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.courses li {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* PORTFOLIO */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    background: #0a192f;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    background: #64ffda;
+    color: black;
+}
+img{
+    border-radius: 50px;
+ }
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #0a192f;
+    color: white;
+    padding: 15px;
+}
+
+/* MOBILE */
+@media(max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+
+/* HERO IMPROVEMENT */
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 3px solid #64ffda;
+}
+
+/* BUTTON STYLE */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #64ffda;
+    color: #0a192f;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #0a192f;
+}
+
+/* SECTION ANIMATION */
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PROJECT CARD IMPROVEMENT */
+.project {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+/* INPUT FOCUS EFFECT */
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #64ffda;
+}
+
+/* NAVBAR SHADOW */
+nav {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER IMPROVE */
+footer {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Solomon</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#portfolio">my project</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="hero-container">
+    <img src="l.jpg" width="100" height="100" alt="Solomon Photo" class="profile-img">
+    
+    <div>
+      <h1>Hello, I'm <span>Solomon</span></h1>
+      <p>Campus Student | Web Developer</p>
+      <p>GPA: 3.5 | Injibara</p>
+      
+      
+    </div>
+  </div>
+</section>
+  
+
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate student learning web development and computer science. I enjoy building websites and solving problems.</p>
+</section>
+
+<!-- COURSES -->
+<section class="courses" id="courses">
+    <h2>My Courses</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>Operating System</li>
+        <li>Automata</li>
+        <li>Software Engineering</li>
+        <li>Assembly Language</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="projects">
+        <div class="project">HTML</div>
+        <div class="project">CSS</div>
+        <div class="project">JavaScript</div>
+        <div class="project">C++</div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project">Portfolio Website</div>
+        
+        <div class="project">bank management System</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+<div style="margin-top:20px;">
+    <p>Connect with me:</p>
+    <a href="#">LinkedIn</a> |
+    <a href="#">GitHub</a> |
+    <a href="#">Telegram</a>
+</div>       
+
+ 
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Solomon | Portfolio</p>
+</footer>
+
+</body>
+</html>
